@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		91DFBF65211D0C7700F5680E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBF64211D0C7700F5680E /* AppDelegate.m */; };
-		91DFBF68211D0C7700F5680E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBF67211D0C7700F5680E /* ViewController.m */; };
-		91DFBF6B211D0C7700F5680E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DFBF69211D0C7700F5680E /* Main.storyboard */; };
 		91DFBF6D211D0C7900F5680E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91DFBF6C211D0C7900F5680E /* Assets.xcassets */; };
-		91DFBF70211D0C7900F5680E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DFBF6E211D0C7900F5680E /* LaunchScreen.storyboard */; };
+		91DFBF70211D0C7900F5680E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DFBF6E211D0C7900F5680E /* Main.storyboard */; };
 		91DFBF73211D0C7900F5680E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBF72211D0C7900F5680E /* main.m */; };
 		91DFBF7D211D0C7A00F5680E /* GesturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBF7C211D0C7A00F5680E /* GesturesTests.m */; };
 		91DFBF88211D0C7A00F5680E /* GesturesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBF87211D0C7A00F5680E /* GesturesUITests.m */; };
+		91DFBF97211D0F4500F5680E /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBF96211D0F4500F5680E /* PanViewController.m */; };
+		91DFBF9A211D0F4F00F5680E /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBF99211D0F4F00F5680E /* TabViewController.m */; };
+		91DFBF9D211D14EF00F5680E /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBF9C211D14EF00F5680E /* PinchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,11 +39,8 @@
 		91DFBF60211D0C7700F5680E /* Gestures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gestures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DFBF63211D0C7700F5680E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91DFBF64211D0C7700F5680E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		91DFBF66211D0C7700F5680E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		91DFBF67211D0C7700F5680E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		91DFBF6A211D0C7700F5680E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91DFBF6C211D0C7900F5680E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		91DFBF6F211D0C7900F5680E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91DFBF6F211D0C7900F5680E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91DFBF71211D0C7900F5680E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91DFBF72211D0C7900F5680E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91DFBF78211D0C7A00F5680E /* GesturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GesturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +49,12 @@
 		91DFBF83211D0C7A00F5680E /* GesturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GesturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DFBF87211D0C7A00F5680E /* GesturesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GesturesUITests.m; sourceTree = "<group>"; };
 		91DFBF89211D0C7A00F5680E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91DFBF95211D0F4500F5680E /* PanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PanViewController.h; sourceTree = "<group>"; };
+		91DFBF96211D0F4500F5680E /* PanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PanViewController.m; sourceTree = "<group>"; };
+		91DFBF98211D0F4F00F5680E /* TabViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
+		91DFBF99211D0F4F00F5680E /* TabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
+		91DFBF9B211D14EF00F5680E /* PinchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinchViewController.h; sourceTree = "<group>"; };
+		91DFBF9C211D14EF00F5680E /* PinchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +107,16 @@
 			children = (
 				91DFBF63211D0C7700F5680E /* AppDelegate.h */,
 				91DFBF64211D0C7700F5680E /* AppDelegate.m */,
-				91DFBF66211D0C7700F5680E /* ViewController.h */,
-				91DFBF67211D0C7700F5680E /* ViewController.m */,
-				91DFBF69211D0C7700F5680E /* Main.storyboard */,
 				91DFBF6C211D0C7900F5680E /* Assets.xcassets */,
-				91DFBF6E211D0C7900F5680E /* LaunchScreen.storyboard */,
+				91DFBF6E211D0C7900F5680E /* Main.storyboard */,
 				91DFBF71211D0C7900F5680E /* Info.plist */,
 				91DFBF72211D0C7900F5680E /* main.m */,
+				91DFBF95211D0F4500F5680E /* PanViewController.h */,
+				91DFBF96211D0F4500F5680E /* PanViewController.m */,
+				91DFBF98211D0F4F00F5680E /* TabViewController.h */,
+				91DFBF99211D0F4F00F5680E /* TabViewController.m */,
+				91DFBF9B211D14EF00F5680E /* PinchViewController.h */,
+				91DFBF9C211D14EF00F5680E /* PinchViewController.m */,
 			);
 			path = Gestures;
 			sourceTree = "<group>";
@@ -235,9 +242,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91DFBF70211D0C7900F5680E /* LaunchScreen.storyboard in Resources */,
+				91DFBF70211D0C7900F5680E /* Main.storyboard in Resources */,
 				91DFBF6D211D0C7900F5680E /* Assets.xcassets in Resources */,
-				91DFBF6B211D0C7700F5680E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91DFBF68211D0C7700F5680E /* ViewController.m in Sources */,
+				91DFBF9A211D0F4F00F5680E /* TabViewController.m in Sources */,
+				91DFBF97211D0F4500F5680E /* PanViewController.m in Sources */,
+				91DFBF9D211D14EF00F5680E /* PinchViewController.m in Sources */,
 				91DFBF73211D0C7900F5680E /* main.m in Sources */,
 				91DFBF65211D0C7700F5680E /* AppDelegate.m in Sources */,
 			);
@@ -300,20 +308,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		91DFBF69211D0C7700F5680E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				91DFBF6A211D0C7700F5680E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		91DFBF6E211D0C7900F5680E /* LaunchScreen.storyboard */ = {
+		91DFBF6E211D0C7900F5680E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				91DFBF6F211D0C7900F5680E /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
