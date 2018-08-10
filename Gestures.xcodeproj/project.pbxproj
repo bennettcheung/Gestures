@@ -16,6 +16,8 @@
 		91DFBF97211D0F4500F5680E /* PanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBF96211D0F4500F5680E /* PanViewController.m */; };
 		91DFBF9A211D0F4F00F5680E /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBF99211D0F4F00F5680E /* TabViewController.m */; };
 		91DFBF9D211D14EF00F5680E /* PinchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBF9C211D14EF00F5680E /* PinchViewController.m */; };
+		91DFBFA0211D270900F5680E /* SwipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBF9F211D270900F5680E /* SwipeViewController.m */; };
+		91DFBFA3211D282300F5680E /* rotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DFBFA2211D282300F5680E /* rotationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		91DFBF99211D0F4F00F5680E /* TabViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
 		91DFBF9B211D14EF00F5680E /* PinchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PinchViewController.h; sourceTree = "<group>"; };
 		91DFBF9C211D14EF00F5680E /* PinchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinchViewController.m; sourceTree = "<group>"; };
+		91DFBF9E211D270900F5680E /* SwipeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipeViewController.h; sourceTree = "<group>"; };
+		91DFBF9F211D270900F5680E /* SwipeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeViewController.m; sourceTree = "<group>"; };
+		91DFBFA1211D282300F5680E /* rotationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotationViewController.h; sourceTree = "<group>"; };
+		91DFBFA2211D282300F5680E /* rotationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rotationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				91DFBF63211D0C7700F5680E /* AppDelegate.h */,
+				91DFBF9E211D270900F5680E /* SwipeViewController.h */,
+				91DFBFA1211D282300F5680E /* rotationViewController.h */,
+				91DFBFA2211D282300F5680E /* rotationViewController.m */,
+				91DFBF9F211D270900F5680E /* SwipeViewController.m */,
 				91DFBF64211D0C7700F5680E /* AppDelegate.m */,
 				91DFBF6C211D0C7900F5680E /* Assets.xcassets */,
 				91DFBF6E211D0C7900F5680E /* Main.storyboard */,
@@ -271,7 +281,9 @@
 				91DFBF9A211D0F4F00F5680E /* TabViewController.m in Sources */,
 				91DFBF97211D0F4500F5680E /* PanViewController.m in Sources */,
 				91DFBF9D211D14EF00F5680E /* PinchViewController.m in Sources */,
+				91DFBFA0211D270900F5680E /* SwipeViewController.m in Sources */,
 				91DFBF73211D0C7900F5680E /* main.m in Sources */,
+				91DFBFA3211D282300F5680E /* rotationViewController.m in Sources */,
 				91DFBF65211D0C7700F5680E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -42,6 +42,22 @@
             </objects>
             <point key="canvasLocation" x="583" y="-261"/>
         </scene>
+        <!--Rotation-->
+        <scene sceneID="9fZ-r0-Dv6">
+            <objects>
+                <viewController id="wH8-Ll-hgZ" customClass="rotationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vfW-Bw-4wX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.1797610436" green="0.22023919789999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Mgf-FM-Clz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rotation" image="item5" id="fps-jj-IEJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H3R-7E-BfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1662" y="1386"/>
+        </scene>
         <!--Pinch-->
         <scene sceneID="Jdw-rr-s3f">
             <objects>
@@ -61,7 +77,7 @@
         <!--Swipe-->
         <scene sceneID="dnu-xN-CpN">
             <objects>
-                <viewController id="4kp-dm-jLI" sceneMemberID="viewController">
+                <viewController id="4kp-dm-jLI" customClass="SwipeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CbN-0w-RNQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,6 +120,7 @@
                         <segue destination="kcv-Vu-jia" kind="relationship" relationship="viewControllers" id="ksC-39-Yh8"/>
                         <segue destination="jwD-Jq-Hql" kind="relationship" relationship="viewControllers" id="Xvx-Ck-NGf"/>
                         <segue destination="4kp-dm-jLI" kind="relationship" relationship="viewControllers" id="BK3-9U-E0y"/>
+                        <segue destination="wH8-Ll-hgZ" kind="relationship" relationship="viewControllers" id="JXE-iO-P4w"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMw-i0-hMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -116,5 +133,6 @@
         <image name="item2" width="30" height="28"/>
         <image name="item3" width="30" height="28"/>
         <image name="item4" width="30" height="30"/>
+        <image name="item5" width="30" height="30"/>
     </resources>
 </document>
