@@ -40,7 +40,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="583" y="-261"/>
+            <point key="canvasLocation" x="-1953" y="-157"/>
         </scene>
         <!--Rotation-->
         <scene sceneID="9fZ-r0-Dv6">
@@ -56,7 +56,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3R-7E-BfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1662" y="1386"/>
+            <point key="canvasLocation" x="921" y="1464"/>
+        </scene>
+        <!--EdgePan-->
+        <scene sceneID="8CO-4P-t5d">
+            <objects>
+                <viewController id="JpJ-ST-dY2" customClass="EdgePanViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rBA-SX-oqz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99098422225050109" green="1" blue="0.6313939238263615" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="8Mb-do-4JJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="EdgePan" image="item6" id="CVZ-Za-rSq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZW-32-Iy0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1814" y="720"/>
         </scene>
         <!--Pinch-->
         <scene sceneID="Jdw-rr-s3f">
@@ -72,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Waa-gu-kJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-438" y="1191"/>
+            <point key="canvasLocation" x="-292" y="1676"/>
         </scene>
         <!--Swipe-->
         <scene sceneID="dnu-xN-CpN">
@@ -88,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xnd-ID-r9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="569" y="1438"/>
+            <point key="canvasLocation" x="-1543" y="1585"/>
         </scene>
         <!--Tap-->
         <scene sceneID="nDd-1e-1tY">
@@ -104,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="064-7W-8bE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="582" y="727"/>
+            <point key="canvasLocation" x="-2106" y="737"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="U4H-OH-5LM">
@@ -121,6 +137,7 @@
                         <segue destination="jwD-Jq-Hql" kind="relationship" relationship="viewControllers" id="Xvx-Ck-NGf"/>
                         <segue destination="4kp-dm-jLI" kind="relationship" relationship="viewControllers" id="BK3-9U-E0y"/>
                         <segue destination="wH8-Ll-hgZ" kind="relationship" relationship="viewControllers" id="JXE-iO-P4w"/>
+                        <segue destination="JpJ-ST-dY2" kind="relationship" relationship="viewControllers" id="QMf-Wo-oOH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RMw-i0-hMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -134,5 +151,6 @@
         <image name="item3" width="30" height="28"/>
         <image name="item4" width="30" height="30"/>
         <image name="item5" width="30" height="30"/>
+        <image name="item6" width="30" height="30"/>
     </resources>
 </document>
