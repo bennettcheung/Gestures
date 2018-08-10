@@ -56,26 +56,56 @@
 
 -(void)edgePanGesture:(UIPanGestureRecognizer *)sender
 {
+    
+    
     NSLog(@"edgePanGesture called");
-    
-    [UIView animateWithDuration:0.5 animations:^{
-     //   [sender setTranslation:CGPointZero inView:self.view];
-        self.drawerView.frame = CGRectOffset(self.drawerView.frame, -150, 0.0);
-        [self.drawerView removeGestureRecognizer:self.edgeGesture];
-        [self.drawerView addGestureRecognizer:self.panGesture];
-    }];
-    
-    CGPoint velocity = [sender velocityInView:self.view];
-    if (sender.state == UIGestureRecognizerStateEnded && velocity.x > 0)
+    if (sender.state != UIGestureRecognizerStateEnded)
     {
-        [UIView animateWithDuration:0.5 animations:^{
-            //   [sender setTranslation:CGPointZero inView:self.view];
-            self.drawerView.frame = self.originalFrame;
-            // user dragged towards the right
-            [self.drawerView removeGestureRecognizer:self.panGesture];
-            [self.drawerView addGestureRecognizer:self.edgeGesture];
-        }];
+        CGPoint translationInView = [sender translationInView:self.view];
+        CGPoint oldCenter = sender.view.center;
+
         
+        CGPoint newCenter = CGPointMake(oldCenter.x + translationInView.x, oldCenter.y);
+        
+        sender.view.center = newCenter;
+        [sender setTranslation:CGPointZero inView:self.view];
+    }
+    
+    if ([sender isKindOfClass:[UIScreenEdgePanGestureRecognizer class]])
+    {
+        if (sender.state == UIGestureRecognizerStateEnded)
+        {
+            [UIView animateWithDuration:0.5 animations:^{
+             
+                self.drawerView.frame = CGRectOffset(self.drawerView.frame, -150, 0.0);
+                [self.drawerView removeGestureRecognizer:self.edgeGesture];
+                [self.drawerView addGestureRecognizer:self.panGesture];
+            }];
+        }
+    }
+    
+    if ([sender isKindOfClass:[UIPanGestureRecognizer class]])
+    {
+        CGPoint velocity = [sender velocityInView:self.view];
+        if (sender.state == UIGestureRecognizerStateEnded && velocity.x > 0)
+        {
+////            CGPoint translationInView = [sender translationInView:self.view];
+//            CGPoint oldCenter = sender.view.center;
+//
+//            CGPoint newCenter = CGPointMake(oldCenter.x + velocity.x, oldCenter.y);
+//
+//            sender.view.center = newCenter;
+//            [sender setTranslation:CGPointZero inView:self.view];
+            
+            [UIView animateWithDuration:0.5 animations:^{
+                //   [sender setTranslation:CGPointZero inView:self.view];
+                self.drawerView.frame = self.originalFrame;
+                // user dragged towards the right
+                [self.drawerView removeGestureRecognizer:self.panGesture];
+                [self.drawerView addGestureRecognizer:self.edgeGesture];
+            }];
+            
+        }
     }
     
     
