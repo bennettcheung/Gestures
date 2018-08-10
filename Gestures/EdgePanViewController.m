@@ -10,13 +10,18 @@
 
 @interface EdgePanViewController ()
 
+
 @property (nonatomic, strong) UIScreenEdgePanGestureRecognizer *edgeGesture;
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
 @property (nonatomic, strong) UIView *drawerView;
+@property (nonatomic, assign) CGPoint originalCenter;
 @property (nonatomic, assign) CGRect originalFrame;
+@property (nonatomic, assign) CGRect endFrame;
+
 @end
 
 @implementation EdgePanViewController
+static int kFrameMoveConstant= 150;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -25,10 +30,12 @@
     CGFloat width = 400;
     CGFloat height = 400;
     self.originalFrame = CGRectMake(CGRectGetMaxX(self.view.bounds) - 20, CGRectGetMidY (self.view.bounds) - height / 2, width, height);
+     self.endFrame = CGRectMake(CGRectGetMaxX(self.view.bounds) - 320, CGRectGetMidY (self.view.bounds) - height / 2, width, height);
     
     self.drawerView = [[UIView alloc] initWithFrame:self.originalFrame];
     self.drawerView.backgroundColor = [UIColor greenColor];
     [self.view addSubview:self.drawerView];
+    self.originalCenter = self.drawerView.center;
     
     self.edgeGesture = [[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(edgePanGesture:)];
     self.edgeGesture.edges = UIRectEdgeRight;
@@ -67,6 +74,9 @@
         
         CGPoint newCenter = CGPointMake(oldCenter.x + translationInView.x, oldCenter.y);
         
+        NSLog(@"New center %f %f", newCenter.x, newCenter.y);
+        if (newCenter.x > self.originalCenter.x - 150)
+            newCenter.x = self.originalCenter.x - 150;
         sender.view.center = newCenter;
         [sender setTranslation:CGPointZero inView:self.view];
     }
@@ -75,12 +85,21 @@
     {
         if (sender.state == UIGestureRecognizerStateEnded)
         {
-            [UIView animateWithDuration:0.5 animations:^{
-             
-                self.drawerView.frame = CGRectOffset(self.drawerView.frame, -150, 0.0);
-                [self.drawerView removeGestureRecognizer:self.edgeGesture];
-                [self.drawerView addGestureRecognizer:self.panGesture];
-            }];
+            //if the move was not significant enough, move rectangle back
+            if (sender.view.center.x > self.originalCenter.x - 60){
+                [UIView animateWithDuration:0.5 animations:^{
+                    self.drawerView.frame = self.originalFrame;
+                }];
+            }
+            else
+            {
+                [UIView animateWithDuration:0.5 animations:^{
+                 
+                    self.drawerView.frame = self.endFrame;
+                    [self.drawerView removeGestureRecognizer:self.edgeGesture];
+                    [self.drawerView addGestureRecognizer:self.panGesture];
+                }];
+            }
         }
     }
     
